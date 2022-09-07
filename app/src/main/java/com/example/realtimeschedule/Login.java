@@ -118,7 +118,7 @@ public class Login extends Activity {
                 }
 
                 if (tex_password.length() < 6) {
-                    password.setError("Password should be more than 6 characters");
+                    password.setError("Password must be more than 6 characters");
                     password.requestFocus();
                     return;
                 }  else {
