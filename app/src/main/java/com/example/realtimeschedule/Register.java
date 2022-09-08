@@ -110,11 +110,16 @@ public class Register extends AppCompatActivity {
                                 users.put("email", email);
                                 users.put("phone", phone);
                                 users.put("password",password);
+
+                                //specify if user is admin or normal user
+                                users.put("isUser", "1");
+
+                                //set path
                                 userRef.child("User").child(currentUserId).setValue(users);
                                 Toast.makeText(getApplicationContext(), "Account Created Successfully",Toast.LENGTH_SHORT).show();
                                 //loadingbar.dismiss();
                                 progressBar.setVisibility(View.GONE);
-                                Intent intent = new Intent(Register.this,Login.class);
+                                Intent intent = new Intent(Register.this, MainActivity.class);
                                 intent.putExtra("currentphone", phone);
                                 startActivity(intent);
                                 //startActivity(new Intent(getApplicationContext(),Login.class));
