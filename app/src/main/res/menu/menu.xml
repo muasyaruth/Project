@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/service1"
+            android:title="Add service"/>
+
+        <item android:title="view users"
+            android:id="@+id/service2"/>
+    </group>
+
+</menu>
