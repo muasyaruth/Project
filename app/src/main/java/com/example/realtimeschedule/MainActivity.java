@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         services.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent admin= new Intent(MainActivity.this, AdminActivity.class);
+                Intent admin= new Intent(MainActivity.this, AdminTasks.class);
                 startActivity(admin);
             }
         });
