@@ -11,7 +11,7 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button services;
+    Button services, availableServices;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +19,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         services= findViewById(R.id.btnServices);
-        services.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent admin= new Intent(MainActivity.this, AdminTasks.class);
-                startActivity(admin);
-            }
-        });
+        availableServices= findViewById(R.id.ViewAvailableServices);
+
+//        availableServices.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent addServices= new Intent(MainActivity.this, AddService.class);
+//                startActivity(addServices);
+//            }
+//        });
+
+//        services.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent admin= new Intent(MainActivity.this, AdminTasks.class);
+//                startActivity(admin);
+//            }
+//        });
     }
 }

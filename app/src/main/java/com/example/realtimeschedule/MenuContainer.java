@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -39,7 +41,12 @@ public class MenuContainer extends AppCompatActivity implements NavigationView.O
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+        switch (item.getItemId()){
+            case R.id.addService:
+                Toast.makeText(MenuContainer.this, "Add Service", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), AddService.class));
+        }
+        return true;
     }
     protected void allocattedActivityTitle(String titleString){
         if (getSupportActionBar()!=null){

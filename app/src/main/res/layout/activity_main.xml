@@ -41,9 +41,10 @@
                     android:textColorHint="@android:color/holo_purple"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.648"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.354" />
+                    app:layout_constraintVertical_bias="0.262" />
 
                 <Button
                     android:id="@+id/btnServices"
@@ -60,6 +61,24 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/About"
                     app:layout_constraintVertical_bias="0.132" />
+
+                <Button
+                    android:id="@+id/ViewAvailableServices"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/shape_login_button"
+                    android:gravity="center"
+                    android:text="Available Services"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/holo_purple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnServices" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </RelativeLayout>

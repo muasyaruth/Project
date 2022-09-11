@@ -46,7 +46,7 @@ public class Login extends Activity {
         progressBar = findViewById(R.id.progressbar);
         forgetPassword=findViewById(R.id.forget);
         firebaseAuth = FirebaseAuth.getInstance();
-        reg=(Button)findViewById(R.id.register);
+        reg= findViewById(R.id.register);
 
         admin=(CheckBox) findViewById(R.id.adminCheck);
         admin.setOnClickListener(new View.OnClickListener() {
